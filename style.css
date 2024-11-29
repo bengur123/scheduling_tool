@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+  }
+  
+  .card {
+    max-width: 1200px;
+    margin: 32px auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+  }
+  
+  .card-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  
+  .header-main {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .card-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+  }
+  
+  .card-subtitle {
+    font-size: 15px;
+    color: #6b7280;
+  }
+  
+  .controls {
+    margin: 24px 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  select {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    min-width: 220px;
+    background: #f9fafb;
+    transition: all 0.2s ease;
+  }
+  
+  select:hover {
+    border-color: #d1d5db;
+    background: #ffffff;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    border: 1px solid #e5e7eb;
+    padding: 14px;
+    text-align: left;
+  }
+  
+  th {
+    background: #f8fafc;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .city-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .city-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .remove-city {
+    border: none;
+    background: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  
+  .remove-city:hover {
+    background: #fef2f2;
+  }
+  
+  .current-time {
+    background: #eff6ff !important;
+    position: relative;
+  }
+  
+  .working-hours { background: #ecfdf5; }
+  .extended-hours { background: #fef3c7; }
+  .outside-hours { background: #fef2f2; }
+  
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    min-width: 280px;
+    align-self: flex-start;
+    border: 1px solid #00000068;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  
+  .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+  }
+  
+  .legend-text {
+    font-size: 13px;
+    color: #4b5563;
+  }
+  
+  .working-color { 
+    background: #ecfdf5;
+    border: 1px solid #00000068;
+}
+  .extended-color {
+    background: #fef3c7; border: 1px solid #00000068;}
+  .outside-color { background: #fef2f2; border: 1px solid #00000068;}
+  
+  @media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+    }
+    
+    .legend {
+        width: 100%;
+    }
+  }

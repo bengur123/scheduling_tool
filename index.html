@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div class="header-main">
+        <h1 class="card-title">Timezone Meeting Table</h1>
+        <div class="card-subtitle">24-hour view across all timezones</div>
+      </div>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color working-color"></div>
+          <span class="legend-text">Working Hours (9:00-17:00)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color extended-color"></div>
+          <span class="legend-text">Extended Hours (7:00-9:00, 17:00-19:00)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color outside-color"></div>
+          <span class="legend-text">Outside Working Hours</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <select id="homeSelect">
+        <option value="">Select home city...</option>
+      </select>
+      <select id="citySelect">
+        <option value="">Add a city...</option>
+      </select>
+    </div>
+
+    <div class="table-container">
+      <table id="timezoneTable">
+        <thead>
+          <tr id="headerRow"></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
